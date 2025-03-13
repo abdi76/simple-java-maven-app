@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'abdi76/my-java-app'  // 🔹 Replace with your Docker Hub username and image name (e.g., 'mydockeruser/my-java-app')
+        DOCKER_IMAGE = 'abdi76/simple-java-maven-app'  // 🔹 Replace with your Docker Hub username and image name (e.g., 'mydockeruser/my-java-app')
         DOCKER_TAG = 'latest'  // 🔹 Change to a version if needed (e.g., 'v1.0.0')
         DEPLOY_SERVER = 'ubuntu@13.42.63.208'  // 🔹 Replace with your EC2 instance public IP (e.g., 'ubuntu@54.12.34.56')
     }
