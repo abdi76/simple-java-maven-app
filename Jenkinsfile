@@ -5,13 +5,13 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'abdi76/my-java-app'  // 🔹 Replace with your Docker Hub username and image name (e.g., 'mydockeruser/my-java-app')
         DOCKER_TAG = 'latest'  // 🔹 Change to a version if needed (e.g., 'v1.0.0')
-        DEPLOY_SERVER = 'ubuntu@18.175.168.22'  // 🔹 Replace with your EC2 instance public IP (e.g., 'ubuntu@54.12.34.56')
+        DEPLOY_SERVER = 'ubuntu@13.40.108.131'  // 🔹 Replace with your EC2 instance public IP (e.g., 'ubuntu@54.12.34.56')
     }
 
     stages {
         stage('Clone Repository') {
             steps { 
-                git branch: 'main', url: 'https://github.com/abdi76/End-End-Jenkins-CICD.git'  
+                git branch: 'main', url: 'https://github.com/abdi76/simple-java-maven-app.git'  
                 // 🔹 Replace 'your-github' with your GitHub username or organization (e.g., 'my-github-user')
                 // 🔹 Ensure the repo URL is correct before running
             }
